@@ -1,0 +1,45 @@
+body{
+    background-color: #FFF8DC;
+}
+h1 {
+    margin-bottom: 15px;
+}
+h2 {
+    margin-top: auto;
+}
+#game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: #F8F8FF;
+    border: solid 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 31px;
+}
+
+#b_container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    width: auto;
+
+}
+
+.selection{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: larger;
+}
+
+.Selection_box {
+    margin-top: 5px;
+    padding-top: 0;
+}
