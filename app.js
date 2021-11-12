@@ -26,9 +26,10 @@ let sqrs = document.querySelectorAll('.square')
 // Next level button
 let nextLevel = document.querySelector('#next_level')
 // The "Your selection box" 
-let selection = document.querySelector('#selection')
+let selection = document.querySelector('.selection')
 //////////////////////////////////////////////////////////////
-
+console.log(sqrs);
+console.log(selection);
 
 
 
@@ -49,11 +50,10 @@ let codeEmpty = ''
     }
     // Turns the code into an Array
     code = codeEmpty.split('')
-    return code
+    return code  
 }
 // Fixes the code to the spot at the top.
 code.innerHTML = "Code: " + generateCode()
-// console.log(code);
 //////////////////////////////////////////////////////////////
 
 
@@ -85,30 +85,32 @@ setInterval(changeSquareContents, 2000);
 // then call a function from that listner
 // the function should check what is in that square that is clicked on, and compare it to  the innerHTML of code.
 
-function A() {
+
+function grabInnerHTMLOfSquare() {
     for (let i = 0; i < sqrs.length; i++) {
-        sqrs[i].addEventListener('click', // function (check if equal))
-
-
-
+        sqrs[i].onclick =  () => {
+            console.log(`Your number selection is ${sqrs[i].innerHTML}`);
+        }
     }
 }
-
-// when I click on one of the buttons it should log the innerHTML
-// You clicked on the number 6
+grabInnerHTMLOfSquare()
 
 
+// Thinking this should be in the above function because of the for loop.
+// I'm habving trouble thinking about 
 function checkIfEqual() {
-    if (X === Y) {
-        // add it to the selection
-    } else {
-        // add an X to "lives"
+    for (let i = 0; i < sqrs.length; i++)  {
+        if (sqrs[i].innerHTML === code[i]) {
+            selection.append(sqrs[i].innerHTML)
+        } else {
+            // add an X to "lives"
+        }
+        console.log(code[i])
     }
 }
-console.log(sqrs);
-
-
-
+checkIfEqual()
+// - Having trouble appending the contents.
+// WHy is line 108 giving me an Undefined at the end?
 
 
 
