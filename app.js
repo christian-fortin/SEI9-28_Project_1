@@ -26,7 +26,7 @@ let sqrs = document.querySelectorAll('.square')
 // Next level button
 let nextLevel = document.querySelector('#next_level')
 // The "Your selection box" 
-let selection = document.querySelector('.selection')
+let selection = document.querySelector('.selection_box')
 //////////////////////////////////////////////////////////////
 console.log(sqrs);
 console.log(selection);
@@ -55,8 +55,7 @@ let codeEmpty = ''
 // Fixes the code to the spot at the top.
 code.innerHTML = "Code: " + generateCode()
 //////////////////////////////////////////////////////////////
-
-
+// console.log(code);
 
 
 
@@ -99,17 +98,23 @@ grabInnerHTMLOfSquare()
 // Thinking this should be in the above function because of the for loop.
 // I'm habving trouble thinking about 
 function checkIfEqual() {
-    for (let i = 0; i < sqrs.length; i++)  {
-        if (sqrs[i].innerHTML === code[i]) {
-            selection.append(sqrs[i].innerHTML)
-        } else {
-            // add an X to "lives"
+    for(let i = 0; i < sqrs.length; i++)  {
+        sqrs.onclick = () => {
+            // the error is either here, they aren't equaling eachother (different data types)
+            if (sqrs[i].innerHTML === code[i]) {
+            // Or the error is here, something with the appending.
+                selection.append(sqrs[i].innerHTML)
+            } else {
+                lives += lives.append("X")
+            }
+            console.log(sqrs[i])
         }
-        console.log(code[i])
+        
     }
 }
 checkIfEqual()
 // - Having trouble appending the contents.
+// - It should be an onClick function!!!!!
 // WHy is line 108 giving me an Undefined at the end?
 
 

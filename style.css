@@ -1,20 +1,19 @@
+/* General: */
 body{
-    background-color: #FFF8DC;
+    background-color: black;
 }
 
-h2 {
-    margin-top: auto;
-}
 #game {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
-
 #code {
     font-size: 40px;
     margin-bottom: 15px;
+    color: white;
 }
 .square {
     height: 100px;
@@ -40,9 +39,52 @@ h2 {
     padding-bottom: 0;
     margin-bottom: 0;
     font-size: larger;
+    color: white;
 }
 
-.Selection_box {
+.selection_box {
     margin-top: 5px;
     padding-top: 0;
+    color: white;
+}
+
+h2 {
+    margin-top: auto;
+    color: white;
+}
+
+#next_level {
+    cursor: pointer;
+}
+
+
+
+
+/* Start Page */
+
+#start_About_Container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+#start {
+    margin-bottom: 50px;
+    width: 200px;
+    height: 100px;
+    border-radius: 25% 10%;
+    cursor:pointer;
+    background-color: white;
+    font-size: xx-large;
+}
+
+#about {
+    width: 200px;
+    height: 100px;
+    border-radius: 10% 25%;
+    cursor:pointer;
+    background-color: white;
+    font-size: x-large;
 }
