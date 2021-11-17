@@ -7,9 +7,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
+
 #code {
     font-size: 40px;
     margin-bottom: 15px;
@@ -23,6 +23,22 @@ body{
     margin-bottom: 20px;
 }
 
+#timer {
+    display: inline-block;
+    margin-top: auto;
+    color: white;
+    font-size: large;
+    margin-bottom: 5px;
+}
+#actualCount {
+    display: inline-block;
+    margin-top: auto;
+    color: white;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+
 .square {
     height: 100px;
     width: 100px;
@@ -32,6 +48,8 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 31px;
+    font-family: Times, Times New Roman, serif;
+    cursor: pointer;
 }
 
 #b_container {
@@ -58,17 +76,36 @@ body{
     color: white;
     text-decoration: underline;
     font-size: x-large;
-
+    font-family: Times, Times New Roman, serif;
 }
 
 
 
-#next_level {
+.next_level {
     cursor: pointer;
     display: none;
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    font-family: Times, Times New Roman, serif;
+    font-size: 15px;
 }
 
+#sq_1 {
+    border-top-left-radius: 25%;
+}
 
+#sq_3 {
+    border-top-right-radius: 25%;
+}
+
+#sq_7 {
+    border-bottom-left-radius: 25%;
+}
+
+#sq_9 {
+    border-bottom-right-radius: 25%;
+}
 
 
 /* Start Page */
@@ -89,6 +126,7 @@ body{
     cursor:pointer;
     background-color: white;
     font-size: xx-large;
+    font-family: Times, Times New Roman, serif;
 }
 
 #about {
@@ -98,6 +136,7 @@ body{
     cursor:pointer;
     background-color: white;
     font-size: x-large;
+    font-family: Times, Times New Roman, serif;
 }
 
 /* Modal: */
@@ -127,8 +166,8 @@ body{
 	/*This will give the box some depth.*/
 	padding: 2%;
 	line-height: 120%;
-	font-family: Arial, Helvetica, sans-serif;
 	overflow: auto;
+    font-family: Times, Times New Roman, serif;
 }
 
 #modal-footer {
@@ -146,6 +185,11 @@ h1 {
 	outline: none;
 	border-radius: 3px;
 	color: white;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Times, Times New Roman, serif;
 	cursor: pointer;
+}
+
+.htp {
+    line-height: 30px;
+    font-size: 30px;
 }
