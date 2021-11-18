@@ -27,73 +27,62 @@ let time = document.querySelector("#actualCount")
 
 // WANT: Loop over a color array, populate squares with one of the random colors.
 
-// Create Color Array
-// loop over the array
-
-// need a math.random to randomly select an index from the color array
-
-
-
-
+// GENERATES A RANDOM COLOR ARRAY
+//////////////////////////////////////////////////////////////
 let colorArray = ['red', 'blue', 'green', 'yellow', 'orange']
 let colorCode = []
 
+let color
 
 
-
-
-function generateColor() {
-
+function generateColors() {
     for (let i = 0; i < 4; i++) {
-    let color = colorArray[Math.floor(Math.random()*colorArray.length)];
-    colorCode.push(color)
+    color = colorArray[Math.floor(Math.random()*colorArray.length)];
+    colorCode.push(color)   
     }
+    return color
 }
-
-
-generateColor()
-console.log(colorCode);
-
+generateColors()
+//////////////////////////////////////////////////////////////
 
 
 
-// // GETTING THE CODE TO RANDOMLY POPULATE:
-// //////////////////////////////////////////////////////////////
-// // Randomly generates one number
-// function generateOneNumber() {
-//   return Math.floor(Math.random() * 9) + 1
-// }
-// // Loops over "generateOneNumber()" 7 times and adds the numbers to "code"
-// function generateCode() {
-//   let codeEmpty = ""
-//   for (let i = 0; i < 2; i++) {
-//     codeEmpty += generateOneNumber()
-//   }
-//   // Turns the code into an Array
-//   code = codeEmpty.split("")
-//   return codeEmpty
-// }
-// // Fixes the code to the spot at the top.
-// code.innerHTML = "Code: " + generateCode()
-// //////////////////////////////////////////////////////////////
 
 
+////////// RUN PRINT STATMENTS
+
+
+
+
+
+// Pushes a random index of the color into the squares style color
+//////////////////////////////////////////////////////////////
+function populateSquare() {
+    code.innerHTML = "Code: " + colorCode
+}
+populateSquare()
+//////////////////////////////////////////////////////////////
 
 
 
 
 
 // GETS THE SQUARES TO CHANGE CONTENTS EVERY 2 SECONDS
-//////////////////////////////////////////////////////////////
-// function changeSquareContents() {
-//   for (let i = 0; i < sqrs.length; i++) {
-//     // loop over the array, get the index number
-//     sqrs[i].innerHTML = generateOneNumber()
-//   }
-// }
-// setInterval(changeSquareContents, 1000)
-//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+function changeSquareContents() {
 
+
+  for (let i = 0; i < sqrs.length; i++) {
+    // loop over the array, get the index number
+    sqrs[i] = 
+    console.log(sqrs[i]);
+  }
+
+
+}
+setInterval(changeSquareContents, 3000000)
+////////////////////////////////////////////////////////////
+changeSquareContents()
 
 
 
@@ -123,7 +112,7 @@ console.log(colorCode);
 //////////////////////////////////////////////////////////////
 let setInt = setInterval(function () {
   time.innerHTML = timeUp++
-  if (time.innerHTML > 30) {
+  if (time.innerHTML > 30000) {
     time.innerHTML = null
     timeUp = null
     alert("YOU LOSE, YOU MUST SUCK")
