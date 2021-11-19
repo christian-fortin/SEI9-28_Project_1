@@ -94,7 +94,7 @@ setInterval(changeSquareContents, 1000)
 //////////////////////////////////////////////////////////////
 let setInt = setInterval(function () {
   time.innerHTML = timeUp++
-  if (time.innerHTML > 3000000) {
+  if (time.innerHTML > 30) {
     time.innerHTML = null
     timeUp = null
     alert("YOU LOSE, YOU MUST SUCK")
