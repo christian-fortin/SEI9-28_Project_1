@@ -21,6 +21,3 @@ How to play:
 - JavaScript
 
 ## Game Play:
-<img width="1093" alt="Game_start_page" src="https://user-images.githubusercontent.com/83780176/142642780-2bee8730-7cf9-4e51-b53f-4ce5d62a914c.png">
-<img width="1097" alt="How_to_play_page" src="https://user-images.githubusercontent.com/83780176/142642781-7591d438-1428-474f-bb7d-8f51a72eab9c.png">
-<img width="1094" alt="Game_play_1" src="https://user-images.githubusercontent.com/83780176/142642779-a3c3f769-a726-4e95-a5ab-10b64b8f5a2f.png">
