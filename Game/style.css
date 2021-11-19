@@ -10,7 +10,7 @@ body{
     flex-direction: column; 
 }
 #level_id {
-    display: flex;
+    display: block;
     justify-content: left;
     font-size: 60px;
     margin-top: 20px;
@@ -36,6 +36,15 @@ body{
 #timer {
     display: inline-block;
     margin-top: auto;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#timer_notice{
+    display: block;
+    margin-top: auto;
+    margin-left: 50px;
     color: white;
     font-size: 30px;
     margin-bottom: 5px;
