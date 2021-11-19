@@ -37,7 +37,7 @@ function generateOneNumber() {
 // Loops over "generateOneNumber()" 7 times and adds the numbers to "code"
 function generateCode() {
   let codeEmpty = ""
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 4; i++) {
     codeEmpty += generateOneNumber()
   }
   // Turns the code into an Array
@@ -62,7 +62,7 @@ function changeSquareContents() {
     sqrs[i].innerHTML = generateOneNumber()
   }
 }
-setInterval(changeSquareContents, 1000)
+setInterval(changeSquareContents, 700)
 //////////////////////////////////////////////////////////////
 
 
