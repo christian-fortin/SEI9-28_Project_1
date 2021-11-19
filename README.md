@@ -13,7 +13,7 @@ How to play:
 ## Setting up Locally:
 - Clone down this repo (optional)
 - Paste this link in your browser: 
-  - https://christian-fortin.github.io/SEI9-28_Project_1/Start_Page.html
+  - https://christian-fortin.github.io/SEI9-28_Project_1/Game/Start_Page.html
 
 ## Technologies:
 - HTML
