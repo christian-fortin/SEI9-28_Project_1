@@ -20,6 +20,17 @@ How to play:
 - CSS
 - JavaScript
 
+## Blocks:
+- Deployment with Git Hub pages seems to change the CSS of the program
+
+## Future stretch goals: 
+- Make a color based version instead of a number based. 
+
+## Wire Frame:
+![Wire_Frame_page_1_Project_1](https://user-images.githubusercontent.com/83780176/142731137-04a217a5-d727-43c2-a415-f03ea6fde9fc.jpg)
+![Wire_Frame_page_2_Project_1](https://user-images.githubusercontent.com/83780176/142731144-5609c466-2e51-411a-a20a-90151f76ac5a.jpg)
+
+
 ## Game Play:
 <img width="1099" alt="star_page" src="https://user-images.githubusercontent.com/83780176/142655261-568abb72-540d-4a24-908f-e644d5aae97b.png">
 
