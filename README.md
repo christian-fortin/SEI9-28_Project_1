@@ -1,4 +1,4 @@
-# "NameLess"
+# "PressTime"
 ## About the game: 
 This game is about speed and attention. It does not have a name. The objective of the game is to read the "code" at the top of the page, and then click on the buttons that are randomly and rapidly appearing on the screen in the same order as they appear in the "code" at the top.
 
