@@ -201,3 +201,16 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+
+
+[contributors-shield]: https://img.shields.io/github/contributors/cdizon239/tower-of-hanoi.svg?style=for-the-badge
+[contributors-url]: https://github.com/cdizon239/tower-of-hanoi/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/cdizon239/tower-of-hanoi.svg?style=for-the-badge
+[forks-url]: https://github.com/cdizon239/tower-of-hanoi/network/members
+[stars-shield]: https://img.shields.io/github/stars/cdizon239/tower-of-hanoi.svg?style=for-the-badge
+[stars-url]: https://github.com/cdizon239/tower-of-hanoi/stargazers
+[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
+[issues-url]: https://github.com/cdizon239/tower-of-hanoi/issues
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/charmille-coleen-dizon
+[product-screenshot]: ./images/productDemo.gif
