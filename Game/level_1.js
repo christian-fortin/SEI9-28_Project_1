@@ -34,13 +34,13 @@ let time = document.querySelector("#actualCount")
 function generateOneNumber() {
   return Math.floor(Math.random() * 9) + 1
 }
-// Loops over "generateOneNumber()" 7 times and adds the numbers to "code"
+// Loops over "generateOneNumber()" 6 times and adds the numbers to "code"
 function generateCode() {
   let codeEmpty = ""
   for (let i = 0; i < 6; i++) {
     codeEmpty += generateOneNumber()
   }
-  // Turns the code into an Array
+  // Turns the code into an Array so that it is able to be clicked individually and returns without commas
   code = codeEmpty.split("")
   return codeEmpty
 }
@@ -54,14 +54,15 @@ code.innerHTML = "Code: " + generateCode()
 
 
 
-// GETS THE SQUARES TO CHANGE CONTENTS EVERY 2 SECONDS
+// GETS THE SQUARES TO CHANGE CONTENTS
 //////////////////////////////////////////////////////////////
 function changeSquareContents() {
   for (let i = 0; i < sqrs.length; i++) {
-    // loop over the array, get the index number
+    // loop over the array, get the index number and fills it with a number
     sqrs[i].innerHTML = generateOneNumber()
   }
 }
+// Does this every 1 second
 setInterval(changeSquareContents, 1000)
 //////////////////////////////////////////////////////////////
 
@@ -92,9 +93,12 @@ setInterval(changeSquareContents, 1000)
 
 // TIMER:
 //////////////////////////////////////////////////////////////
+// Set's the timer for the level
 let setInt = setInterval(function () {
+  // For the timer at the top of the game, it increases every 1 second
   time.innerHTML = timeUp++
   if (time.innerHTML > 30) {
+    // once it hits 30 seconds, you loose the game and are sent back to the home page
     time.innerHTML = null
     timeUp = null
     alert("YOU LOSE, YOU MUST SUCK")
@@ -112,6 +116,7 @@ let setInt = setInterval(function () {
 
 // CALLING TIMER:
 //////////////////////////////////////////////////////////////
+// This just initiates the timer. 
 let timeUp = 0
 function timer() {
   setInt
@@ -127,26 +132,35 @@ timer()
 // COMPARISON / WIN CONDITION / TRACKER
 //////////////////////////////////////////////////////////////
 let codeIndex = 0;
+// Set's the first click you do to the first index of the array
 let wrongs = 0;
+// Set's the wrongs to 0
+
 
 function checkIfEqual() {
   for (let i = 0; i < sqrs.length; i++) {
     sqrs[i].onclick = () => {
       if (sqrs[i].innerHTML == code[codeIndex]) {
+        // If the inner html = the code at index "x (codeIndex)"
         console.log(`Your number selection is ${sqrs[i].innerHTML}`)
         selection.innerHTML += code[codeIndex];
+        // Add it to the code selection bar
         codeIndex++;
+        // And move on to the next index in the array
         if (codeIndex >= code.length) {
+        // Win condition
           gameWon = true;
           gameWon123();
           nextLevel.style.display = "block";
         }
       } else {
         lives.innerHTML += "X";
+        // If the incorrect number is pressed, then add a 'X' to the wrongs
         wrongs++;
         console.log("Thats Wrong");
         console.log(wrongs);
         if (wrongs >= 3) {
+          // loose condition and redirect
           alert("YOU LOSE");
           location.assign("Start_Page.html");
         }

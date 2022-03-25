@@ -34,7 +34,7 @@ let time = document.querySelector("#actualCount")
 function generateOneNumber() {
   return Math.floor(Math.random() * 9) + 1
 }
-// Loops over "generateOneNumber()" 7 times and adds the numbers to "code"
+// Loops over "generateOneNumber()" 3 times and adds the numbers to "code"
 function generateCode() {
   let codeEmpty = ""
   for (let i = 0; i < 3; i++) {
