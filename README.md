@@ -18,11 +18,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 <!-- PROJECT LOGO -->
 <br />
@@ -73,11 +69,15 @@
 
 ## About The Project
 <div align="center">
-![ezgif-1-5242fb8826](https://user-images.githubusercontent.com/83780176/155367266-b4948399-d7aa-4961-9e3c-2d3082ac7dfb.gif)
+  
+  ![ezgif-1-5242fb8826](https://user-images.githubusercontent.com/83780176/155367266-b4948399-d7aa-4961-9e3c-2d3082ac7dfb.gif)
+  
 </div>
-  PressTime is a fun interactive game that tests your skills with your computer's mouse. The objective of the game is to press the number's as they appear in the same order as displayed at the top of the screen. To beat the game, you must make it past all three levels. As the developer, I have not passed level 3. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PressTime is a fun interactive game that tests your skills with your computer's mouse. The objective of the game is to press the number's as they appear in the same order as displayed at the top of the screen. To beat the game, you must make it past all three levels. As the developer, I have not passed level 3. 
 
-**Features:**
+
+
+#### Features:
 
 - A landing page including a start button and a modal for how to play.
 - A modal to display and explain how to play the game.
